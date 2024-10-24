@@ -1,0 +1,35 @@
+* {
+    /* ========================== */
+    /* COLORS */
+    /* ========================== */
+    --color-primary: #ed215b;
+    --color-secondary: black;
+    --color-tertiary: white;
+
+    /* ========================== */
+    /* BACKGROUND */
+    --background-primary: rgb(62, 62, 62);
+    --background-secondary: var(--color-primary);
+    /* ========================== */
+
+    /* ========================== */
+    /* TIPOGRAFIA */
+    /* ========================== */
+    --font-primary: 1rem/1.5 "Inter", sans-serif;
+}
+
+body {
+    font: var(--font-primary);
+    margin: 0;
+    padding: 0;
+
+    @media (prefers-color-scheme: dark) {
+        color: var(--color-primary);
+        background-color: var(--color-secondary);
+    }
+
+    @media (prefers-color-scheme: light) {
+        color: var(--color-secondary);
+        background-color: var(--color-tertiary);
+    }
+}
