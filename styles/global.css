@@ -26,7 +26,7 @@ body {
     padding: 0;
 
     @media (prefers-color-scheme: dark) {
-        color: var(--color-primary);
+        color: var(--color-tertiary);
         background-color: var(--color-secondary);
     }
 
@@ -48,4 +48,8 @@ header {
         display: flex;
         justify-content: space-around;
     }
+}
+
+footer {
+    margin: 1rem;
 }
