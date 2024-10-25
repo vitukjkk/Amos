@@ -16,10 +16,12 @@
     /* TIPOGRAFIA */
     /* ========================== */
     --font-primary: 1rem/1.5 "Inter", sans-serif;
+    --font-secondary: 1rem/2 "Oxanium", sans-serif;
 }
 
 body {
     font: var(--font-primary);
+    text-align: center;
     margin: 0;
     padding: 0;
 
@@ -31,5 +33,19 @@ body {
     @media (prefers-color-scheme: light) {
         color: var(--color-secondary);
         background-color: var(--color-tertiary);
+    }
+}
+
+header {
+    margin: 1rem;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        display: inline-block;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
     }
 }

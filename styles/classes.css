@@ -2,10 +2,41 @@
 /* HEADER */
 /* ===================== */
 
+/* ICONES */
 .imgHeaderIcons {
     width: 50px;
+    height: 50px;
+    padding: .2rem;
 
     @media (prefers-color-scheme: dark) {
         filter: invert();
+    }
+}
+
+/* TITULO */
+
+.h1HeaderTitle {
+    color: var(--color-primary);
+    font: var(--font-secondary);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+
+/* ===================== */
+/* MAIN */
+/* ===================== */
+
+.h2MainFrase {
+    max-width: 100%;
+    
+    @media (prefers-color-scheme: dark) {
+        color: var(--color-tertiary);
+    }
+}
+
+.imgMainAmos {
+    @media (max-width: 501px) {
+        max-width: 100%;
     }
 }
