@@ -1,0 +1,11 @@
+/* ===================== */
+/* HEADER */
+/* ===================== */
+
+.imgHeaderIcons {
+    width: 50px;
+
+    @media (prefers-color-scheme: dark) {
+        filter: invert();
+    }
+}
